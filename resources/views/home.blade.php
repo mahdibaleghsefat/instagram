@@ -16,18 +16,10 @@
                     <div class="pr-5"><strong>30.3k</strong> followers</div>
                     <div class="pr-5"><strong>814</strong> following</div>
                 </div>
-                <div class="pt-4 font-weight-bold">Milad Nouri（ツ）میلاد نوری</div>
+                <div class="pt-4 font-weight-bold">{{ $user->profile->title }}</div>
+                <div>{{ $user->profile->description }}</div>
                 <div>
-                    🌠غرق در برنامه‌نویسی، عاشق تکنولوژی، علاقه‌مند به رسانه
-                    <br>
-                    📱مدیر شرکت توکان‌تک
-                    <br>
-                    CEO @TookanTech | @myPoonez
-                    ‌<br>
-                    ‌I love my job & enjoy it ❤️
-                </div>
-                <div>
-                    <a href="#">t.me/MiladNouriChannel</a>
+                    <a href="#">{{ $user->profile->url }}</a>
                 </div>
             </div>
         </div>
