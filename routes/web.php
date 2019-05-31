@@ -11,12 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Auth::routes();
 
+Route::post('follow/{user}', 'FollowsController@store');
+
+Route::get('/', 'PostsController@index');
 Route::get('/p/create', 'PostsController@create');
 Route::get('/p/{post}', 'PostsController@show');  // در صورتی که این روت بالاتر از روت کریت بالایی باشد با خطا مواجه می شویم(هنگام اضافه کردن پست).
 Route::post('/p', 'PostsController@store');
